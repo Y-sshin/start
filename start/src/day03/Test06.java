@@ -14,5 +14,6 @@ public class Test06 {
 		
 		System.out.println("name1 == name2 : " + bool1);
 		System.out.println("name1.equals(name2) : " + bool2);
+		System.out.println("깃 올라가는지 테스트");
 	}
 }
