@@ -10,7 +10,7 @@ package day03.ex;
  */
 public class ex04 {
 	public static void main(String[] args) {
-		double tmp = 365.2426;
+		double tmp   = 365.2426;
 		int day      = (int)tmp/1;
 		       tmp   =      tmp%1;
 		       tmp   =      tmp*24;
