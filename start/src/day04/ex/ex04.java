@@ -12,7 +12,7 @@ public class ex04 {
 	public static void main(String[] args) {
 		int years = (int)(Math.random() * (3000-1000+1)+1);
 		String yun = (years%400==0)?("윤년입니다."):((years%100==0)?("평년입니다."):((years%4==0)?("윤년입니다."):("평년입니다.")));
-		System.out.println("생성된 년도는 " + years + "이 해는 " + yun);
+		System.out.println("생성된 년도는 " + years + "이고, 이 해는 " + yun);
 	}
 
 }

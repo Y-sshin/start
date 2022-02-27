@@ -11,7 +11,7 @@ package day04.ex;
  		특문-영문소문자(a~z)-
  		특문
  		문자열에서 문자를 추출하는 방법
- 		문자열.charAt(dnlclrkqt)
+ 		문자열.charAt(dnlclrkqt위치갛ㅅ)
  		예
  		"abcd"에서 두번째문자를 추출하려면
  		"abcd".charAt(1);

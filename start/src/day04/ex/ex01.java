@@ -10,8 +10,6 @@ public class ex01 {
 	int no1 = (int)(Math.random() * (25-1+1)+1);
 	int no2 = (int)(Math.random() * (25-1+1)+1);
 	int no3 = (int)(Math.random() * (25-1+1)+1);
-//	String result = (no1==no2)?():()
-	
-//	(no1>no2)?((no1>no3)?():()):()
+//	(1,2가 같냐)?(2,3이 같냐):()
 	}
 }
