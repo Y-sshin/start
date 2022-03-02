@@ -10,7 +10,7 @@ package day05.ex;
 public class ex11 {
 
 	public static void main(String[] args) {
-		
+		//내가한거랑 거의 똑같이 하심
 	}
 
 }

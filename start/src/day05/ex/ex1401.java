@@ -6,14 +6,11 @@ package day05.ex;
 		
 		1. 4자리 숫자 abcd는 0이 들어있지 않고, 모두 다른 숫자이다.
 		2. 첫번째 숫자(a)가 마지막 숫자(d)보다 2 큼
-		 3<=a<=9
-		 1<=d<=7
-		 b>=c+1
 		3. 두번째 숫자(b)가 세번째 숫자(c)보다 크다.
 		4. 4자리 숫자를 역순으로 하고 그 수와 4자리수를 합하면 16456이 된다.
  */
-public class ex14 {
 
+public class ex1401 {
 	public static void main(String[] args) {
 		
 	}

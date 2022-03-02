@@ -12,10 +12,32 @@ package day05.ex;
 		extra ]
 			위 문제가 해결되면 최소공배수를 구하는 문제로 풀어보세요.
  */
+import java.util.*;
 public class ex13 {
-
 	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		//1번 입력메세지
+		System.out.println("첫번째 숫자를 입력 :");
+		//1번 데이터 기억
+		int no1 = sc.nextInt();
+		//2번 입력메세지
+		System.out.println("두번째 숫자를 입력 :");		
+		//2번 데이터 기억
+		int no2 = sc.nextInt();
 		
+		// 두 수 중 작은 수를 찾는다.
+		int min = (no1<no2)?(no1):(no2);
+		int result = 1;
+		//공약수 찾기
+		for(int i = min ; i > 1 ; i--) {
+			if(no1%i==0&&no2%i==0) {
+				result = i;
+				//원하는 수를 찾았으니 반복문 종료
+				break;
+			}
+		}
+		//결과 출력하기
+		System.out.println("입력받은 두 수 "+no1+" | "+no2+"의 최대 공약수는 "+result+"입니다.");
 	}
 
 }

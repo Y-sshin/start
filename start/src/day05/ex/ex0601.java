@@ -20,20 +20,25 @@ import java.util.*;
 public class ex0601 {
 	public static void main(String[] args) {
 		int pcRandom = (int)((Math.random() * 100)+1);
-		System.out.println("pc는 1~100사이의 수를 만들었습니다. 무엇일까요 :");
 		Scanner sc = new Scanner(System.in);
-		int userExpect = sc.nextInt();
-		for(int i = 0 ; i > 10; i++) {
-			System.out.println("[" + (10 - i) + "] 번의 기회가 있습니다.\n 숫자를 입력하세요 :");
-			if(pcRandom==userExpect) {
-				System.out.println("정답입니다. " + i + "번 만에 정답을 맞췄습니다.");
+		System.out.println("pc는 1~100사이의 수를 만들었습니다.");
+		while(true) {
+			int i=0;
+			int userExpect = sc.nextInt();
+			if(i>10||pcRandom==userExpect) {
+				System.out.println("맞았음");				
+				sc.close();
+				break;
 			}else if(pcRandom>userExpect) {
-				System.out.println("오답입니다. 입력한 숫자보다 큰 수입니다. \n숫자를 다시 입력 해 주세요. :");
-				
+				System.out.println("pc의 숫자가 더 큽니다.");
+				i=i+1;
+			}else if(pcRandom<userExpect) {
+				System.out.println("user의 숫자가 더 큽니다.");				
+				i=i+1;				
 			}else {
-				System.out.println("오답입니다. 입력한 숫자보다 작은 수입니다.");				
+				break;
 			}
 		}
 	}
 
-}
+}//전체 횟수를 5번으로 제한하는 코드를 다시 해 볼 것

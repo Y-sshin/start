@@ -13,9 +13,12 @@ package day05.ex;
 				가 동일한 수를 말한다.
  */
 import java.util.*;
-public class ex12 {
+public class ex1201 {
 	public static void main(String[] args) {
-		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("5자리 숫자를 입력하세요 :");
+		int no = sc.nextInt();
+		//if() {
+		}
 	}
 
-}

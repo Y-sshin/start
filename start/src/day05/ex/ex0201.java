@@ -7,9 +7,9 @@ package day05.ex;
 public class ex0201 {
 	public static void main(String[] args) {
 		char ch = 'A';
-		for(int i = 0 ; i < 10 ; i++);{
-//		ch = ch + i ;
+		for(int i = 0 ; i < 10 ; i++){
 		System.out.print(ch);
+		ch += 1 ;
 		}
 	}
 
