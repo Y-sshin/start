@@ -9,7 +9,7 @@ package day04;
  */
 public class Test05 {
 	public static void main(String[] args){
-		int no = (int)(Math.random() * (25-1+1)+1);//랜덤하게 숫자 만들기
+		int no = (int)(Math.random()*5+11);//랜덤하게 숫자 만들기//2022-03-05 11~15사이의 수로 변경
 		String result = (no%2==0)?("짝수"):("홀수");//숫자 판별하고
 		System.out.println("1부터25사이에서 랜덤하게 발생한 숫자" + no + "는 " + result + "입니다.");
 	}

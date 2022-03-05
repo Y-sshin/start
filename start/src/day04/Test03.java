@@ -1,5 +1,5 @@
 package day04;
-
+//시프트연산
 public class Test03 {
 	public static void main(String[] arg) {
 		int no =20;

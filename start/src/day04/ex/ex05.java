@@ -7,9 +7,9 @@ package day04.ex;
 public class ex05 {
 	public static void main(String[] args) {
 		System.out.println("3자리 숫자 임의생성");
-		int no = (int)(Math.random() * (999-100+1)+1);
+		int no = (int)(Math.random() * (999-100+1)+100);
 		System.out.println("생성된 임의의 숫자는 " + no + "입니다.");
-		int result = (no/100 == 50)?((int)50):((no>50)?((((no/100)*100)+100)-no):(no-(no/100)*100));
+		int result = (no%100 == 50)?(50):((no%100>50)?((((no/100)*100)+100)-no):(no-((no/100)*100)));
 		//int un = (no/100)*100;
 		//int ov = ((no/100)*100)+100;
 		System.out.println(result + "만큼 필요합니다.");

@@ -12,6 +12,7 @@ public class Test01 {
 		float no55 = (float)185.5;//강제 형변환 방법
 		double no6 = 3.15;
 		double no7 = 10.;
+		System.out.print(no5);
 		
 		
 		

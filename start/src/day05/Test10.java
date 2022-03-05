@@ -7,6 +7,7 @@ public class Test10 {
 		do {
 			System.out.println("no : " + no);
 		}while(++no<10);
+		System.out.println("no : " + no);
 	}
 
 }

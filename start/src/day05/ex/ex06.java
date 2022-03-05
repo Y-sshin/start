@@ -25,7 +25,7 @@ public class ex06 {
 		//2.랜덤한 숫자 만들고
 		int num = (int)(Math.random()*100+1);
 		//3.반복해서 처리
-		for(int i = 0 ; i < 5 ; i++){//횟수제한이 있기때문에 카운터 변수가 있는 for 반복문을 사용하도록
+		for(int i = 0 ; i < 7 ; i++){//횟수제한이 있기때문에 카운터 변수가 있는 for 반복문을 사용하도록
 			 System.out.print("숫자입력:");
 			 int no = sc.nextInt();
 			 if(no==num) {

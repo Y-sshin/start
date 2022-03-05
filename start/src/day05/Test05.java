@@ -4,12 +4,13 @@ package day05;
 */
 import java.util.*;
 public class Test05 {
-	public static void main() {
+	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);//입력도구 준비
-		System.out.print("나이를 입력하세요 :");
+		System.out.print("나이를 입력하세dyddyddyd :");
 		int age = sc.nextInt();
 		String sage = "장년층";
-		int gen = age/10*10;
+		int gen = age/10;
+		System.out.print(gen);
 		switch(gen){
 		case 0:
 			sage = "유년기";
@@ -29,6 +30,6 @@ public class Test05 {
 		default :
 			sage = "장년층";
 		}
-		System.out.println("입력한 나이 :"+age+"는"+sage+"입니다.");
+		System.out.println("입력한 나이 :"+age+"는 "+sage+"입니다.");
 	}
 }

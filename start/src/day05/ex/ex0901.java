@@ -9,9 +9,16 @@ package day05.ex;
 public class ex0901 {
 	public static void main(String[] args) {
 		int result = 0;
-		for(int i=0;i<100;i++) {
-			result += i;
-			if(result>100)break;
+		int no = 1;
+		int no1 = -1;
+		for(int i=0;;i++) {
+			result = result  + (no1*no);
+			if(result>100) {
+				break;
+			}
+			no1 = no1*(-1);
+			no += 1;
+			System.out.println(",,,,,,"+result);
 		}
 		System.out.println(result);
 	}

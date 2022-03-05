@@ -15,7 +15,7 @@ public class ex0801 {
 		String five = sc.nextLine();
 		int result = 0;
 		for(int i =0;i<five.length();i++) {
-			int num = (int)(five.charAt(i));
+			int num = (int)(five.charAt(i)-'0');
 			result += num;
 		}
 		System.out.println("합 :"+result);

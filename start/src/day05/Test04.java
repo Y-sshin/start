@@ -12,6 +12,7 @@ public class Test04 {
 		String sage = "유년기";
 		
 		if(age<10) {
+			
 		}else if(age<20) {
 			sage = "10대";
 		}else if(age<30) {

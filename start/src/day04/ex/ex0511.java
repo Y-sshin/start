@@ -3,7 +3,7 @@ package day04.ex;
 public class ex0511 {
 	public static void main(String[] args) {
 		System.out.println("3자리 숫자 임의생성");
-		int no = (int)(Math.random() * (999-100+1)+1);
+		int no = (int)(Math.random() * (999-100+1)+100);
 		System.out.println("생성된 세자리 숫자는" + no + "입니다.");		
 		int thr = (no/100)*100;
 		if(no%100==50) {

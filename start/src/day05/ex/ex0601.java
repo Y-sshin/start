@@ -22,20 +22,23 @@ public class ex0601 {
 		int pcRandom = (int)((Math.random() * 100)+1);
 		Scanner sc = new Scanner(System.in);
 		System.out.println("pc는 1~100사이의 수를 만들었습니다.");
+		int i=0;
 		while(true) {
-			int i=0;
+			System.out.print((i+1)+"번째 시도입니다.");
 			int userExpect = sc.nextInt();
-			if(i>10||pcRandom==userExpect) {
+			if(i<10&&pcRandom==userExpect) {
 				System.out.println("맞았음");				
 				sc.close();
+				i+=1;
 				break;
-			}else if(pcRandom>userExpect) {
+			}else if(i<10&&pcRandom>userExpect) {
 				System.out.println("pc의 숫자가 더 큽니다.");
 				i=i+1;
-			}else if(pcRandom<userExpect) {
+			}else if(i<10&&pcRandom<userExpect) {
 				System.out.println("user의 숫자가 더 큽니다.");				
 				i=i+1;				
 			}else {
+				if(i>=10)
 				break;
 			}
 		}

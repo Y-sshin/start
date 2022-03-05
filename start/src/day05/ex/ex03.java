@@ -19,7 +19,7 @@ public class ex03 {
 		for(int i=0;i<len;i++) {											//길이만큼 반복하여 한글자씩 추출, 출력
 			char ch = str.charAt(i);
 			System.out.print((i+1)+"번째 문자"+ch+",\t");
-			if(i%5==0&i!=0) {
+			if((i+1)%5==0&i!=0) {
 				System.out.println();
 			}
 		}

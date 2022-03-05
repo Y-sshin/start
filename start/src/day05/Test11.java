@@ -5,9 +5,8 @@ public class Test11 {
 	public static void main(String[] args) {
 		int dan = 5;
 		for (int i = 0 ; i <9 ; i++) {
-			int gop = (i+1);
-			if(gop == 5)continue;
-			System.out.println(dan + "X" + gop + "=" + (dan*gop));
+			if(i+1 == 5)continue;
+			System.out.println(dan + "X" + (i+1) + "=" + (dan*(i+1)));
 		}
 	}
 

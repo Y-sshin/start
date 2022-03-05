@@ -19,8 +19,8 @@ public class ex0301 {
 		String str = sc.nextLine();
 		for(int i = 0 ; i < str.length() ; i++) {
 			char al = str.charAt(i);
-			System.out.print(i + "번째 글자 " + al + "\t" );
-			if(i%6==0&&i!=0) {
+			System.out.print((i+1) + "번째 글자 " + al + "\t" );
+			if((i+1)%5==0&&i!=0) {
 				System.out.println();
 			}
 		}

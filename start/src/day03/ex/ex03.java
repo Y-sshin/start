@@ -12,6 +12,6 @@ public class ex03 {
 		System.out.print("임의의 돈 "+won+"원은 5만원권 :"+won/fiveMan+"장, 만원권 :"+won%fiveMan/man+"장, 오천원권 :"
 		+won%man/fiveChun+"장, 천원권 :"+won%fiveChun/chun+"장, 오백원동전 :"+won%chun/fiveBeak+"개, 백원동전 :"
 		+won%fiveBeak/beak+"개, 오십원동전 :"+won%beak/fiveTen+"개, 십원동전 :"+won%fiveTen/ten+"개, 일원동전 :"
-		+won%ten );
+		+won%ten );//재수정본인데 굳이 화폐단위의 변수들을 만들지 않아도 되었다
 		}
 }

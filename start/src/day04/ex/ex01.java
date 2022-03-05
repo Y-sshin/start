@@ -7,9 +7,9 @@ package day04.ex;
  */
 public class ex01 {
 	public static void main(String[] args) {
-	int no1 = (int)(Math.random() * (25-1+1)+1);
-	int no2 = (int)(Math.random() * (25-1+1)+1);
-	int no3 = (int)(Math.random() * (25-1+1)+1);
+	int no1 = (int)(Math.random()*25+1);
+	int no2 = (int)(Math.random()*25+1);
+	int no3 = (int)(Math.random()*25+1);
 //	(1,2가 같냐)?(2,3이 같냐):()
 	}
 }
