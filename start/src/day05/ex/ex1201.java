@@ -16,9 +16,37 @@ import java.util.*;
 public class ex1201 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("5자리 숫자를 입력하세요 :");
-		int no = sc.nextInt();
-		//if() {
+		System.out.print("5자리 숫자를 입력하세요 :");
+		String fiveNumStr = sc.nextLine();
+		for(int i = 0 ; i < fiveNumStr.length() ; i++) {
+			if(fiveNumStr.charAt(i)<'0'||fiveNumStr.charAt(i)>'9') {
+				System.out.println("숫자를 써주십쇼. 프로그램 종료");
+				break;
+			}
+		}
+		int fiveNum = Integer.parseInt(fiveNumStr);
+		switch(fiveNumStr.length()/2){
+			case 0:
+				for(int i = 0 ; i<fiveNumStr.length()/2-1 ;i++) {
+					if(fiveNumStr.charAt(i)!=fiveNumStr.charAt(fiveNumStr.length()-1-i)) {
+						System.out.print("회문수가 아닙니다. 프로그램 종료");
+						break;
+					}else {
+						System.out.println("입력한 숫자"+fiveNum+"은 회문수가 맞습니다.");						
+					}
+				}
+				break;
+			case 1:
+				for(int i = 0 ; i<fiveNumStr.length()/2 ;i++) {
+					if(fiveNumStr.charAt(i)!=fiveNumStr.charAt(fiveNumStr.length()-1-i)) {
+						System.out.print("회문수가 아닙니다. 프로그램 종료");
+						break;
+					}else {						
+						System.out.println("입력한 숫자"+fiveNum+"은 회문수가 맞습니다.");
+					}
+				}
+				break;
 		}
 	}
+}
 

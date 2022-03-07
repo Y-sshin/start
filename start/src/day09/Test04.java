@@ -41,7 +41,7 @@ public class Test04 {
 		for(int i = 0 ; i < m2.length ; i++){//총점방에 누적된 점수를 입력
 			sum +=m2[i];
 		}
-		m2[m2.length] = sum;
+		m2[m2.length-1] = sum;
 	}
 	
 	//출력하는 함수

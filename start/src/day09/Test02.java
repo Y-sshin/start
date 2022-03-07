@@ -29,11 +29,12 @@ public class Test02 {
 		return no;//반환값 내보내기
 	}
 	public int calc(int no1,int no2) {//두 수를 입력 받아서 계산해주는 함수//매ㅂ개변수는 여러개가 입역되면,  컴마 단위로 나열한다.
-		int result = 0;//반환값 변수
+		//int result = 0;//반환값 변수
 		//이 함수를 실행할 때 입력된 두 정수는
 		//no1, no2변수에 기억될 것이다. 이 변수에 기억된 데이터를 계산 하면 된다.
-		result = no1+no2;
-		return result;//1실행중인 이 함수를 즉시 종료하세요
+		//result = no1+no2;
+		//return result;//1실행중인 이 함수를 즉시 종료하세요
+		return no1+no2;
 	}
 	
 	

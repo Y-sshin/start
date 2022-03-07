@@ -14,16 +14,16 @@ package day05.ex;
  */
 public class ex1301 {
 	public static void main(String[] args) {
-		int no1 = (int)(Math.random() * 100+1);
-		int no2 = (int)(Math.random() * 100+1);
-		for(int i = 0 ; ; i++) {
-			for(int j = 0 ; ; j++) {
-				if(no1*(i+1)==no2*(j+1)) {
-					System.out.println(no1+"과(와)"+no2+"의 최소 공배수는"+no1*(i+1)+"이고 이것은 no1값("+no1+")을 ("+(i+1)+"번, "+no2+"을 ("+(j+1)+"번 곱한 값이다.");
-					break;
-				}
+		int no1 = (int)(Math.random()*91+10);
+		int no2 = (int)(Math.random()*91+10);
+		
+		System.out.println(no1+"|"+no2);
+		int tmp = (no1>no2)?(no1):(no2);
+		for(int i = tmp ; ; i++) {
+			if(i%no1==0&&i%no2==0) {
+				System.out.print(i+"는 no1과, no2의 최소공배수이다.");
+				break;
 			}
 		}
 	}
-
 }

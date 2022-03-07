@@ -8,7 +8,17 @@ package day06.ex;
  	3부터 100 사이의 숫자 중 소수만 모두 출력하세요
  */
 public class ex01 {
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) {		
+		loop:
+		for(int i = 3 ; i < 300 ; i++) {
+		for(int j = 2 ; j<=i ; j++) {
+			if(i!=j&&i%j==0) {
+				continue loop;
+			}else if(i==j&&i%j==0){
+				System.out.print(i+",");
+				}
+			}
+		}
 	}
 }
+

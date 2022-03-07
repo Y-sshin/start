@@ -7,7 +7,22 @@ package day06.ex;
  */
 public class ex02 {
 	public static void main(String[] args) {
-		
+		double up =0.0;
+		double down =7564.0;
+		for(int i = 1 ; ; i++) {
+			up += 0.54;
+			down -= 1.07;
+			if(up>down) {
+				int hour = 0;
+				int minute = 0;
+				int second = 0;
+				hour = i/3600;
+				minute = i%3600/60;
+				second = i%60;
+				System.out.println(hour+"시간"+minute+"분"+second+"초 이후에");
+				break;
+			}
+		}
 	}
 }
 

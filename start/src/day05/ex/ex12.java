@@ -15,7 +15,18 @@ package day05.ex;
 import java.util.*;
 public class ex12 {
 	public static void main(String[] args) {
-		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("5자리 숫자만 입력하셈");
+		int no = sc.nextInt();
+		if(no/10000==no%10) {
+			if(no%10000/1000==no%100/10) {
+				System.out.println("입력숫자 :"+no+"는 회문수가 맞음");
+			}else {
+				System.out.println("입력숫자 :"+no+"는 회문수가 아님");				
+			}
+		}else {			
+			System.out.println("입력숫자 :"+no+"는 회문수가 아님");				
+		}
 	}
 
 }

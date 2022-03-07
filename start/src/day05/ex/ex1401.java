@@ -12,7 +12,21 @@ package day05.ex;
 
 public class ex1401 {
 	public static void main(String[] args) {
-		
+		int result = 0;
+		for(int d = 1 ; d <= 7 ; d++) {
+			for(int c = 1 ; c<=9 ; c++) {
+				if(d==c)continue;
+				for(int b = c+1 ; b <= 9 ; b++) {
+					int a = d+2;
+					if((a*1000)+(b*100)+(c*10)+(d)+(d*1000)+(c*100)+(b*10)+(a)==16456) {
+						result=(a*1000)+(b*100)+(c*10)+(d);
+						break;
+					}
+				}
+			}
+		}
+		System.out.print("답은:"+result);
 	}
 
 }
+//이유를 모르겟음

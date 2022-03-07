@@ -23,11 +23,11 @@ public class ex01 {
 	}
 	
 	//입력함수
-	public String[] input(Scanner s){
+	public String[] input(Scanner x){
 		String[] str = new String[3];
 		//메세지출력
 		System.out.print("계산식 입력 :");
-		String sik = s.nextLine();
+		String sik = x.nextLine();
 		//문자열에서 숫자와 연산기호를 분리
 		for(int i = 0 ; i < sik.length(); i++) {
 			char ch = sik.charAt(i);

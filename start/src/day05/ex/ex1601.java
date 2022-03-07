@@ -19,7 +19,14 @@ package day05.ex;
 public class ex1601 {
 
 	public static void main(String[] args) {
-		
+		for(int k = 0 ; k <2 ; k++) {			
+			for(int j = 1 ; j <10 ; j++) {
+				for(int i = 2+k ; i < 10 ; i=i+2) {
+					System.out.print(i + " x " + j + " = " + i*j + "\t");
+				}
+				System.out.println();
+			}
+		}
 	}
 
 }
