@@ -6,6 +6,15 @@ package day10.ex;
  * @version v 1.0
  */
 public class Student {
+	public Student() {
+		
+	}
+	public Student(String name, int ban, int no, int kor, int eng,
+			int rank, int total, double avg, int math) {
+		this.name = name;
+		this.ban = ban;
+		
+	}
 	private String name;
 	private int ban, no, kor, eng, math;
 	private int total, rank;//보너스 문제
