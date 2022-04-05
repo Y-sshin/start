@@ -12,15 +12,15 @@ public class ex01 {
 	public String randomChar() {
 		String ranch = "";
 		for(int i = 0 ; 0 < 100 ; i++) {			
-			ranch += ('A'+(Math.random()*10)+"");
-		}
-		return ranch;
-	}
-	public void setChar() {
-		chArry = new String[100][2];
-		for(int i = 0 ; i < 100 ; i++) {
-			chArry[i][0] = ()+"";
-			chArry[i][1] = 1+"";
+//			ranch += ('A'+(Math.random()*10)+"");
+//		}
+//		return ranch;
+//	}
+//	public void setChar() {
+////		chArry = new String[100][2];
+//		for(int i = 0 ; i < 100 ; i++) {
+////			chArry[i][0] = ()+"";
+////			chArry[i][1] = 1+"";
 		}
 	}
 }
